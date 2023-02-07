@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <header class="bg-blue-500">demo</header>
-    <footer>{{ msg }}</footer>
-  </div>
+  <HeaderApp></HeaderApp>
+  <Navbar></Navbar>
 </template>
 
 <script>
+import HeaderApp from "./Header.vue";
+import Navbar from "./Navbar.vue";
+
 export default {
   name: "Home-app",
+  components: {
+    HeaderApp,
+    Navbar,
+  },
   data() {
-    return {
-      msg: "asdgfsgfgsad",
-    };
+    return {};
   },
 };
 </script>

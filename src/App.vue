@@ -1,15 +1,21 @@
 <template>
   <Home></Home>
+  <v-icon name="bi-music-player" />
+  <CoHamburgerMenu />
 </template>
 
 <script>
 import Home from "./components/Home.vue";
 import "./assets/tailwind.css";
+import OhVueIcon from "oh-vue-icons";
+import { CoHamburgerMenu } from "oh-vue-icons/icons";
 
 export default {
   name: "App",
   components: {
     Home,
+    "v-icon": OhVueIcon,
+    CoHamburgerMenu,
   },
 };
 </script>
